@@ -28,7 +28,26 @@ START.SPRING.IO<BR>
 <h4>Spring Boot Auto Configuration :Tomcat configurations, Error Configurations..</h4>
 <h4>Spring Boot DevTools:increase developer productivity. It automatically reloads the changes to page.</h4>
 <h4>Configuration Using profiles: for environments- dev, trace ,info ,prod,warning,error,off</h4>
-<h4>Complex Configurations</h4>
+<h4>Complex Configurations</h4><br>
+
+<h1>Restful Api & SpringBoot as Backend</h1>
+<h2>web,devtools,jpa,h2</h2>
+<h2>Sample Hello World Restful Service</h2>
+//Controller
+@RestController // this handles rest request. so we tell to spring that this is rest controller.
+public class HelloWorldController {
+
+	//Get
+	//URI - /hello-world   request
+	//method-"Hello World" response
+	
+//	@RequestMapping(method = RequestMethod.GET,path="/hello-world")   map the get request to the uri <br>
+	@GetMapping(path="/hello-world")<br>
+	public String helloWorld() {<br>
+		return "Hello World , Its me Kaija";<br>
+	}
+	
+}
 
 
 
