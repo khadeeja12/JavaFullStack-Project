@@ -24,13 +24,12 @@ it has an URI<br>
 <h3>Spring Boot</h3><br>
 START.SPRING.IO<BR>
 
-<h4>Spring Boot starter projects : convenient dependency descriptors.Dependencies are Predefined.Variety of starter projects-web,mvc,...</h4><br>
-<h4>Spring Boot Auto Configuration :Tomcat configurations, Error Configurations..</h4><br>
-<h4>Spring Boot DevTools:increase developer productivity. It automatically reloads the changes to page.</h4><br>
+<h4>Spring Boot starter projects : convenient dependency descriptors.Dependencies are Predefined.Variety of starter projects-web,mvc,...</h4>
+<h4>Spring Boot Auto Configuration :Tomcat configurations, Error Configurations..</h4>
+<h4>Spring Boot DevTools:increase developer productivity. It automatically reloads the changes to page.</h4>
+<h4>Configuration Using profiles: for environments- dev, trace ,info ,prod,warning,error,off</h4>
+<h4>Complex Configurations</h4>
 
-<h3>Configuration Using profiles: for environments- dev, trace ,info ,prod,warning,error,off</h3><br>
-<h3>Complex Configurations:</h3><br>
-<h3></h3>
 
 
 
