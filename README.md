@@ -56,6 +56,15 @@ public class HelloWorldController {
 <h3>Dispatcher Servlet</h3><br>
 Request goes to dispatcher servelet. it knows all the mappings present in the application.so it mapped to specific method and controller.it executes and return backs the bean. And the dsipatcher servlet says to the jackson do the conversion to json and returns the response back.<br>
 
+<h3>Path Variable</h3><br>
+we are using path variable and giving the value and getting the response as this value<br>
+http://localhost:8080/hello-world/path-variable/khadeeja<br>
+@GetMapping(path="/hello-world/path-variable/{name}") // accept the path variable here <br>
+	public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {<br>
+		return new HelloWorldBean(String.format("Hello World %s", name));<br>
+	}
+ 
+
 
 
 
