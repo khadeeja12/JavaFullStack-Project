@@ -64,7 +64,13 @@ http://localhost:8080/hello-world/path-variable/khadeeja<br>
 		return new HelloWorldBean(String.format("Hello World %s", name));<br>
 	}
  
-
+<h2>Connecting Service with Angular</h2><br>
+we want to call the service within our application.
+so we need to create backendservice/backendapi/dataservice in angular.
+cmd: ng generate service service/data/welcomeData
+create a method in service
+declare it in constructor of our required page
+call it in the button clcik function
 
 
 
