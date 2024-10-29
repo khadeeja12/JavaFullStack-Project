@@ -46,10 +46,16 @@ public class HelloWorldController {
 	public String helloWorld() {<br>
 		return "Hello World , Its me Kaija";<br>
 	}	
-}
+}<br>
+
+@GetMapping(path="/hello-world-bean")<br>
+	public HelloWorldBean helloWorldBean() {<br>
+		return new HelloWorldBean("Hello World");<br>
+	}
 
 <h3>Dispatcher Servlet</h3><br>
 Request goes to dispatcher servelet. it knows all the mappings present in the application.so it mapped to specific method and controller.it executes and return backs the bean. And the dsipatcher servlet says to the jackson do the conversion to json and returns the response back.<br>
+
 
 
 
