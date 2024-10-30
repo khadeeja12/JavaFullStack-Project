@@ -70,7 +70,9 @@ so we need to create backendservice/backendapi/dataservice in angular.
 cmd: ng generate service service/data/welcomeData
 create a method in service
 declare it in constructor of our required page
-call it in the button clcik function
+call it in the button clcik function <br>
+
+If we call an HttpService, it may take a long time to execute. some service takes 3 to 5 seconds to execute.if we do it synchronously,we call the service and wait for response.The entire browser will hang. so we call all the http services asynchronously.observable is one of the approach for asynchronous communication. angular use extensive use of observables as the interface most of the asynchronolous operations. if we want to use of ajax request using http module angular in tern use of this observables( it is declarative).
 
 
 
