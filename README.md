@@ -77,6 +77,11 @@ So we use Subscribe() - we can call the same service again and again.<br><br>
 http request we sent, it return the observable.so when we subscribe it execute the http  request and return backs the response<br>
 when we get the response from the subscribe call the success method is called.<br>
 
+<h2>Managing Todos From Backend</h2><br><br>
+Retreive all Tasks for a user -GET   /users/{username}/todos   ( methods and resources associated with each operations) <br>
+Delete a Task of a user-DELETE  /users/{username}/todos/{todo_id} <br>
+Edit a Task - PUT   /users/{username}/todos/{todo_id} <br>
+Create a new Task - POST  /users/{username}/todos<br>
 
 
 
