@@ -84,10 +84,23 @@ Edit a Task - PUT   /users/{username}/todos/{todo_id} <br>
 Create a new Task - POST  /users/{username}/todos<br>
 
 <h2>Retrieve All Tasks</h2><br>
+<h3>Backend</h3><br>
 create a seperate package for tasks<br>
 Create the getters setters,constructor in another file<br>
 create a service. And write the static data to it and it act as database. Also the function returning these data.<br>
 Then call this service and aslo set the path  in main class.<br>
+<h3>Frontend</h3><br>
+create the service and write the function for returnig the url.<br>
+call the retreive function in listaskcomponent<br>
+<h2>delete a Todo</h2><br>
+Restlet Client :Rest API Testing - RestAPI Client called Restlet .<br>
+Then give the delete method and url and then click on send button. now the task is deleted<br>
+<h3>Each time the application is restart the data is refreshed again and show the tasks again</h3><br>
+<h2>Delete From UI</h2><br>
+<h2>Update, it goes to another page and show tghe details to update</h2><br>
+
+
+
 
 
 
