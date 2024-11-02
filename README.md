@@ -96,8 +96,10 @@ call the retreive function in listaskcomponent<br>
 Restlet Client :Rest API Testing - RestAPI Client called Restlet .<br>
 Then give the delete method and url and then click on send button. now the task is deleted<br>
 <h3>Each time the application is restart the data is refreshed again and show the tasks again</h3><br>
-<h2>Delete From UI</h2><br>
-<h2>Update, it goes to another page and show tghe details to update</h2><br>
+<h3>Delete From UI</h3><br>
+<h2>Update, it goes to another page and show the details to update</h2><br>
+<h2>Create A Task</h2><br>
+
 
 
 
