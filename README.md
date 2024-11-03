@@ -105,6 +105,17 @@ So if we use username adn password also along with , its also not secure. Theref
 <h4>Dependency-SpringBoot starter Security is used</h4><br>
 Now when we restart the application, and typing the url to browser, it takes us to the login page.<br>
 Therefore it is called Form based Authentication. username is user and password is printed to our console.<br>
+Also we can set the custom username and password in application.properties file.<br>
+<h3>Form Based Authentication - Session in server and cookies in browser. cookie identify the sessio n on browser and that would be used as authentication mechanism. it needs the additional session on server side.<br>
+Basic Athentication - we keeps sending the basic authentication header as part of the request.So we not need to create a session on backend.</h3><br>
+Add the Basic Authentication into ur frontend<br>
+Options request is denied by spring security. so to allow it, we need to configure bean of the type SecurityFilterChain<br>
+it disable csrf and allow the options request.<br>
+
+
+
+
+
 
 
 
