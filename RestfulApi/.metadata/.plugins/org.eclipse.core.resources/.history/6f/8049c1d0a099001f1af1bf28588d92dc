@@ -1,0 +1,5 @@
+package com.khadeeja.rest.webservices.restfulwebservices.basic.auth;
+
+public class WebConfig {
+
+}

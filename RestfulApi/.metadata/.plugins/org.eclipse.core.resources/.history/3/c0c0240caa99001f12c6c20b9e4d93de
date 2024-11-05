@@ -1,0 +1,44 @@
+package com.khadeeja.rest.webservices.restfulwebservices.basic.auth;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Configuration
+@EnableWebSecurity
+public class SpringSecurityConfigurationBasicAuth {
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity   
+ http) throws Exception   
+ {
+
+        // Allow preflight OPTIONS requests from all origins for CORS (important for Angular access)
+        http.authorizeRequests(auth -> auth
+                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+                .anyRequest().authenticated());
+
+        // Configure basic authentication with default settings
+        http.httpBasic(Customizer.withDefaults());
+
+        // Disable session management as your application is likely stateless (RESTful)
+        http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+
+        // Disable CSRF protection as it's not typically needed for RESTful APIs
+        http.csrf().disable();
+
+        // Add CORS filter before security filters to handle CORS requests early
+        http.addFilterBefore(new CorsFilter(), SecurityContextPersistenceFilter.class);
+
+        // (Optional) Customize CORS behavior using a CorsFilter implementation
+        // You can find libraries like `cors` or implement your own filter to
+        // configure allowed origins, methods, headers, etc.
+
+        return http.build();
+    }
+}

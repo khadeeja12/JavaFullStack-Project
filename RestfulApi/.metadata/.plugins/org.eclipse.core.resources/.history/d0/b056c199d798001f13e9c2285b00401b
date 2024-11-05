@@ -1,0 +1,25 @@
+package com.khadeeja.rest.webservices.restful_web_services.todo;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TodoHardCodedService {
+	
+  private static List<Todo> todos=new ArrayList<Todo>(); // this act as database and we initialise data in it
+  private static int idCounter=0;
+  
+   static {
+	   todos.add(new Todo(++idCounter,"khadeeja","Learn to Code",new Date(),false));
+	   todos.add(new Todo(++idCounter,"khadeeja","Learn about Microservices",new Date(),false));
+	   todos.add(new Todo(++idCounter,"khadeeja","Learn Angular",new Date(),false));
+   }
+   
+   public List<Todo> findAll(){
+	   return todos;
+   }
+
+}

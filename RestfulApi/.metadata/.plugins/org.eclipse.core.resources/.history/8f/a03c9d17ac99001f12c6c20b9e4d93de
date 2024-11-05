@@ -1,0 +1,12 @@
+spring.application.name=restful-web-services
+
+logging.level.org.springframework=debug
+
+spring.security.user.name=khadeeja
+spring.security.user.password=kaija
+
+
+spring.web.cors.allow-credentials=true
+spring.web.cors.allowed-origin-patterns=*
+spring.web.cors.allowed-methods=GET, POST, PUT, DELETE, OPTIONS
+spring.web.cors.allowed-headers=*
